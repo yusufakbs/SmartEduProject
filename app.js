@@ -27,11 +27,10 @@ app.use(bodyParser.urlencoded({ extended: true }))  // for parsing application/x
 //Routes
 
 app.use('/', pageRoute);
-
 app.use('/about', pageRoute);
 app.use('/courses', courseRoute);
 
-// PORT
+
 app.listen(port, () => {
   console.log(`App started on port ${port}`);
 });

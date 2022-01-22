@@ -9,7 +9,7 @@ const categoryRoute = require('./routes/categoryRoute');
 const userRoute = require('./routes/userRoute');
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 // Connect DB
 
